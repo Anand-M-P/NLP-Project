@@ -1,6 +1,6 @@
 data.txt present in this folder is slightly different from the original data.txt uploaded earlier. Reason for the difference is as follows:
 
-Intially, we intended our reviews to follow a particular format in which there is space between every word including punctuaion marks and full stops. 
+Intially, we intended our reviews to follow a particular format in which there is space between every word including punctuation marks and full stops. 
 
 For example :
 + i bought my canon g3 about a month ago and i have to say i am very satisfied . 

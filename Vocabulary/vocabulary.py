@@ -1,7 +1,6 @@
 import nltk
 from nltk.probability import FreqDist
 
-nltk.download('punkt')
 
 def build_vocabulary(data_file):
 	
@@ -13,15 +12,14 @@ def build_vocabulary(data_file):
 	print(fdist)
 	# print(fdist.most_common(2000))
 
-	output = open("vocabulary.txt", "w")
-	
+	output_file = open("../Vocabulary/vocabulary.txt", "w")
 
-	for word, frequency in fdist.most_common(2000):
-            if frequency >= 2:
-                output.write(word + "\n")
-
-	output.close()
+	for word, frequency in fdist.most_common(4000):		
+		if frequency >= 2 and word!='+' and word!='-':
+			output_file.write(word + "\n")
+			
+	output_file.close()
 	return 1
 
-if build_vocabulary("data_without_stopwords.txt") :
-	print("Vocabulary builded successfully!")
+#if build_vocabulary("../Stopwords/data_without_stopwords.txt") :
+#	print("Vocabulary built successfully!")

@@ -19,14 +19,14 @@ def remove_short_forms(line):
     
     return line
 
-# remove_stowords takes two files as argument and creates a new file after removing the stopwords_set. 
-def remove_stopwords(data, stopwords): 
+# remove_stopwords takes two files as argument and creates a new file outfile after removing the stopwords_set. 
+def remove_stopwords(data, stopwords,outfile): 
 
     stopwords_set = set(line.strip() for line in open(stopwords))
 #     print(stopwords_set)
  
     reviews_file = open(data, "r")
-    output = open("data_without_stopwords.txt", "w")
+    output = open(outfile, "w")
 
     for line in reviews_file:
         
@@ -56,6 +56,6 @@ def remove_stopwords(data, stopwords):
     return
     
 
-remove_stopwords("data.txt", "stopwords.txt")  
-print("Program Successfully Terminated!")
+#remove_stopwords("../Data/data.txt", "stopwords.txt","data_without_stopwords.txt")  
+#print("Program Successfully Terminated!")
             
