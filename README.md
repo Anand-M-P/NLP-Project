@@ -33,7 +33,7 @@
 * data8.txt 0.9636363636363636
 * data9.txt 0.9818181818181818
 * data10.txt 0.9137931034482759
-* 
-# Average accuracy for Unigram:
+
+# Average accuracy for Bigram:
 * 0.9459247648902821
 
